@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Baldosas</title>
+    <link rel="stylesheet" href="/Calculadora/css/Calcularadora.css">
+    <link rel="shortcut icon" href="/Calculadora/img/Logo La escandi.png" type="image/x-icon" height="16px" width="16px">
+</head>
+<body>
+    
+    <div class="container">
+        <center><img src="img/Logo La escandi.png" alt="La escandi logo" class="logo" height="120" ></center>
+        <h1>CALCULAR NUMERO DE BALDOSAS</h1>
+        <form id="tileCalculatorForm">
+            <label for="need">NUMERO NECESITADO (metros):</label>
+            <input type="number" id="need" name="need" step="0.01" required>
+            <label for="piezas">PIEZAS POR CAJA:</label>
+            <input type="number" id="piezas" name="piezas" step="0.01" required>
+
+            <label for="content">CONTENIDO POR CAJA (metros):</label>
+            <input type="number" id="content" name="content" step="0.01" required>
+
+            <button type="button" onclick="calcularExacto()">Calcular</button>
+        </form>
+
+        <div id="result"></div>
+<script src="Calculadora.js"></script>
+</body>
+</html>
