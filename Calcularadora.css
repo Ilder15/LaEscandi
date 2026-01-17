@@ -129,10 +129,5 @@ button:hover {
             border-bottom: 2px solid #ff9100;
         }
 
-        /* Estilo especial para que parezca un botón */
 
-        .nav-button:hover {
-            background-color: #e68200;
-            border-bottom: none !important;
-        }
         
