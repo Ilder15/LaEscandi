@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Escandi</title>
+    <link rel="stylesheet" href="/Calculadora/style/Calcularadora.css">
+    <link rel="shortcut icon" href="icono la escandi png.png" type="image/x-icon" height="16px" width="16px">
+</head>
+<body>   
+    <nav class="navbar">
+        <a href="#" class="navbar-brand"><img src="/Calculadora/img/Logo La escandi.png" alt="" height="50"></a>
+        
+        <div class="navbar-menu">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="#" class="nav-link">Catalogo</a>
+            <a href="Precios.html" class="nav-link">Calcular Precio</a>
+            <a href="CalculadoraBaldosas.html" class="nav-link nav-button">Calcular Baldosas</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>CALCULAR NUMERO DE BALDOSAS</h1>
+        <form id="tileCalculatorForm">
+            <label for="need">NUMERO NECESITADO (metros):</label>
+            <input type="number" id="need" name="need" step="0.01" required>
+            <label for="piezas">PIEZAS POR CAJA:</label>
+            <input type="number" id="piezas" name="piezas" step="0.01" required>
+
+            <label for="content">CONTENIDO POR CAJA (metros):</label>
+            <input type="number" id="content" name="content" step="0.01" required>
+
+            <button type="button" onclick="calcularExacto()">Calcular</button>
+        </form>
+
+        <div id="result"></div>
+<script src="/Calculadora/logic/Calculadora.js"></script>
+</body>
+</html>
